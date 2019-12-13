@@ -1,0 +1,144 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+#sidebar-wrapper-wrapper {
+    height: auto !important;
+    margin: 0 auto -60px;
+    /*min-height: 100%;*/
+  /* padding: 0 0 60px;*/
+}
+#wrapper {
+	padding-left: 0px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left: 250px;
+    width: 0;
+    height: 70%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	background:#ECECEC;  /*added by biren*/
+	color:black;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+#wrapper{
+	height:100%;
+}
+#page-content-wrapper {
+    width: 100%;
+    /*position: absolute;*/
+    padding: 15px;
+	height:100%;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	color:black;   /*biren*/
+
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+	color:black;   /*biren*/
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color:black;   /*biren*/
+	
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: blue;
+	/*background:#4ca750;*/
+	 /*biren*/
+    background: rgba(255,255,255,1);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+	background: rgba(255,255,255,1);
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+	
+}
+
+.sidebar-nav > .sidebar-brand a {
+    
+	color:black;   /*biren*/
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #blue;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
